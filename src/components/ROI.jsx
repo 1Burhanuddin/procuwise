@@ -26,15 +26,15 @@ const ROI = () => {
     <section className="bg-white py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 lg:mb-20">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#002e33] mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6 leading-tight">
             Real customer ROI
           </h2>
-          <p className="text-xl text-[#406266] max-w-4xl mx-auto mb-8 leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed">
             No matter your industry's procurement challenges, learn how Procurify partners with customers to streamline workflows from procure to pay to achieve measurable ROI.
           </p>
           <a 
             href="https://www.procurify.com/resources/stories/"
-            className="inline-flex items-center bg-[#31936a] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#406266] transition-all duration-200 transform hover:scale-105 shadow-lg"
+            className="inline-flex items-center bg-[#8b5cf6] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#7c3aed] transition-all duration-200 transform hover:scale-105 shadow-lg"
           >
             Customer stories
             <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -46,11 +46,11 @@ const ROI = () => {
         {/* Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <div key={index} className="text-center p-8 border border-[#d9e0e1] rounded-2xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white">
-              <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#31936a] mb-4">
+            <div key={index} className="text-center p-8 border border-gray-200 rounded-2xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white">
+              <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#8b5cf6] mb-4">
                 {stat.value}
               </div>
-              <div className="text-sm lg:text-base text-[#406266] mb-8 leading-relaxed">
+              <div className="text-sm lg:text-base text-gray-600 mb-8 leading-relaxed">
                 {stat.description}
               </div>
               <div className="flex justify-center">

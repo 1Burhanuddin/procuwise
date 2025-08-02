@@ -1,15 +1,17 @@
 const Footer = () => {
   return (
-    <footer className="bg-[#002e33] text-white">
+    <footer className="bg-[#1a0b2e] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Navigation Bar */}
-        <div className="flex justify-between items-center py-6 border-b border-[#406266]">
+        <div className="flex justify-between items-center py-6 border-b border-white">
           <div className="flex items-center">
-            <img 
-              src="https://www.procurify.com/wp-content/uploads/2023/02/Procurify-Logo.svg" 
-              alt="Procuwise" 
-              className="h-8 w-auto"
-            />
+            <a href="/" className="flex items-center bg-white px-4 py-2 rounded-lg shadow-sm min-w-[160px] justify-center">
+              <img 
+                src="/procuwise-logo.png" 
+                alt="Procuwise" 
+                className="h-8 w-auto"
+              />
+            </a>
           </div>
           <nav className="hidden lg:flex items-center space-x-8">
             <a href="/product" className="text-[#d9e0e1] hover:text-white transition-colors duration-200">Product</a>
@@ -20,7 +22,7 @@ const Footer = () => {
             <a href="/login" className="text-[#d9e0e1] hover:text-white transition-colors duration-200">Login</a>
             <a 
               href="/get-started" 
-              className="bg-[#31936a] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#406266] transition-all duration-200"
+              className="bg-[#8b5cf6] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7c3aed] transition-all duration-200"
             >
               Book a demo
             </a>
@@ -102,7 +104,7 @@ const Footer = () => {
         </div>
 
         {/* Mobile Apps and Social Media */}
-        <div className="py-8 border-t border-[#406266]">
+        <div className="py-8 border-t border-white">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-4">
               <span className="text-sm text-[#d9e0e1]">Mobile app available for download</span>
@@ -140,7 +142,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright and Legal */}
-        <div className="py-6 border-t border-[#406266]">
+        <div className="py-6 border-t border-white">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-[#d9e0e1]">
               Copyright © Procuwise Technologies Inc. 2025. All Rights Reserved.

@@ -2,7 +2,7 @@ const CTA = () => {
   return (
     <section className="py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-[#002e33] rounded-3xl p-12 lg:p-16 relative overflow-hidden">
+        <div className="bg-gradient-to-b from-[#1a0b2e] to-[#0f0517] rounded-3xl p-12 lg:p-16 relative overflow-hidden">
           {/* Grid Pattern Overlay */}
           <div className="absolute inset-0 opacity-30" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M0 0h60v60H0z'/%3E%3Cpath d='M0 0h60v60H0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
@@ -22,7 +22,7 @@ const CTA = () => {
             </p>
             <a 
               href="/get-started"
-              className="inline-block bg-[#31936a] text-white px-12 py-6 rounded-full text-xl lg:text-2xl font-semibold hover:bg-[#406266] transition-all duration-200 transform hover:scale-105 shadow-2xl"
+              className="inline-block bg-[#8b5cf6] text-white px-12 py-6 rounded-full text-xl lg:text-2xl font-semibold hover:bg-[#7c3aed] transition-all duration-200 transform hover:scale-105 shadow-2xl"
             >
               Book a demo
             </a>

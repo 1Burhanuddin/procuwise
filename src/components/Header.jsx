@@ -13,16 +13,16 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-[#002e33] shadow-sm border-b border-[#406266] sticky top-0 z-50">
+    <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="flex items-center">
+            <a href="/" className="flex items-center px-4 py-2 min-w-[160px] justify-center">
               <img 
-                src="https://www.procurify.com/wp-content/uploads/2023/02/Procurify-Logo.svg" 
+                src="/procuwise-logo.png" 
                 alt="Procuwise" 
-                className="h-8 w-auto"
+                className="h-10 w-auto"
               />
             </a>
           </div>
@@ -33,7 +33,7 @@ const Header = () => {
               <div className="relative">
                 <button
                   onClick={() => toggleDropdown('product')}
-                  className="flex items-center text-[#d9e0e1] hover:text-white font-medium transition-colors duration-200"
+                  className="flex items-center text-gray-700 hover:text-[#8b5cf6] font-medium transition-colors duration-200"
                 >
                   Product
                   <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -52,7 +52,7 @@ const Header = () => {
               <div className="relative">
                 <button
                   onClick={() => toggleDropdown('solutions')}
-                  className="flex items-center text-[#d9e0e1] hover:text-white font-medium transition-colors duration-200"
+                  className="flex items-center text-gray-700 hover:text-[#8b5cf6] font-medium transition-colors duration-200"
                 >
                   Solutions
                   <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -71,7 +71,7 @@ const Header = () => {
               <div className="relative">
                 <button
                   onClick={() => toggleDropdown('customers')}
-                  className="flex items-center text-[#d9e0e1] hover:text-white font-medium transition-colors duration-200"
+                  className="flex items-center text-gray-700 hover:text-[#8b5cf6] font-medium transition-colors duration-200"
                 >
                   Customers
                   <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -90,7 +90,7 @@ const Header = () => {
               <div className="relative">
                 <button
                   onClick={() => toggleDropdown('resources')}
-                  className="flex items-center text-[#d9e0e1] hover:text-white font-medium transition-colors duration-200"
+                  className="flex items-center text-gray-700 hover:text-[#8b5cf6] font-medium transition-colors duration-200"
                 >
                   Resources
                   <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -109,15 +109,15 @@ const Header = () => {
 
             {/* Right side buttons */}
             <div className="flex items-center space-x-6">
-              <a href="/pricing" className="text-[#d9e0e1] hover:text-white font-medium transition-colors duration-200">
+              <a href="/pricing" className="text-gray-700 hover:text-[#8b5cf6] font-medium transition-colors duration-200">
                 Pricing
               </a>
-              <a href="/login" className="text-[#d9e0e1] hover:text-white font-medium transition-colors duration-200">
+              <a href="/login" className="text-gray-700 hover:text-[#8b5cf6] font-medium transition-colors duration-200">
                 Login
               </a>
               <a 
                 href="/get-started" 
-                className="bg-[#31936a] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#406266] transition-all duration-200 transform hover:scale-105 shadow-lg"
+                className="bg-[#8b5cf6] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#7c3aed] transition-all duration-200 transform hover:scale-105 shadow-lg"
               >
                 Book a demo
               </a>
@@ -128,7 +128,7 @@ const Header = () => {
           <div className="lg:hidden">
             <button
               onClick={toggleMobileMenu}
-              className="text-[#d9e0e1] hover:text-white focus:outline-none focus:text-white transition-colors duration-200"
+              className="text-gray-700 hover:text-[#8b5cf6] focus:outline-none focus:text-[#8b5cf6] transition-colors duration-200"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMobileMenuOpen ? (
@@ -144,19 +144,19 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="lg:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-[#002e33] border-t border-[#406266]">
-              <a href="/product" className="block px-3 py-2 text-[#d9e0e1] hover:text-white font-medium">Product</a>
-              <a href="/solutions" className="block px-3 py-2 text-[#d9e0e1] hover:text-white font-medium">Solutions</a>
-              <a href="/customers" className="block px-3 py-2 text-[#d9e0e1] hover:text-white font-medium">Customers</a>
-              <a href="/resources" className="block px-3 py-2 text-[#d9e0e1] hover:text-white font-medium">Resources</a>
-              <a href="/pricing" className="block px-3 py-2 text-[#d9e0e1] hover:text-white font-medium">Pricing</a>
-              <a href="/login" className="block px-3 py-2 text-[#d9e0e1] hover:text-white font-medium">Login</a>
-              <a 
-                href="/get-started" 
-                className="block mx-3 mt-4 bg-[#31936a] text-white px-6 py-3 rounded-full font-semibold text-center hover:bg-[#406266] transition-all duration-200"
-              >
-                Book a demo
-              </a>
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
+                              <a href="/product" className="block px-3 py-2 text-gray-700 hover:text-[#8b5cf6] font-medium">Product</a>
+                <a href="/solutions" className="block px-3 py-2 text-gray-700 hover:text-[#8b5cf6] font-medium">Solutions</a>
+                <a href="/customers" className="block px-3 py-2 text-gray-700 hover:text-[#8b5cf6] font-medium">Customers</a>
+                <a href="/resources" className="block px-3 py-2 text-gray-700 hover:text-[#8b5cf6] font-medium">Resources</a>
+                <a href="/pricing" className="block px-3 py-2 text-gray-700 hover:text-[#8b5cf6] font-medium">Pricing</a>
+                <a href="/login" className="block px-3 py-2 text-gray-700 hover:text-[#8b5cf6] font-medium">Login</a>
+                <a 
+                  href="/get-started" 
+                  className="block mx-3 mt-4 bg-[#8b5cf6] text-white px-6 py-3 rounded-full font-semibold text-center hover:bg-[#7c3aed] transition-all duration-200"
+                >
+                  Book a demo
+                </a>
             </div>
           </div>
         )}

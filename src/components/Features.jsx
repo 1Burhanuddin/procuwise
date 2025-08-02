@@ -21,29 +21,29 @@ const Features = () => {
   ];
 
   return (
-    <section className="bg-[#f7fbfd] py-20 lg:py-32">
+    <section className="bg-white py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 lg:mb-20">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#002e33] mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6 leading-tight">
             Easier, faster, smarter procurement
           </h2>
-          <p className="text-xl text-[#406266] max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Consolidate purchasing, expense management, and accounts payable in one tool and gain full visibility and financial control to manage spend with confidence. Procuwise it.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {features.map((feature, index) => (
-            <div key={index} className="bg-[#e8fdf7] rounded-2xl p-8 lg:p-10 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-[#d2fbef]">
+            <div key={index} className="bg-gradient-to-b from-[#f8f7ff] to-[#f0eeff] rounded-2xl p-8 lg:p-10 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-purple-200">
               <div className="mb-6">
-                <span className="inline-block bg-[#31936a] text-white text-xs font-semibold px-4 py-2 rounded-full uppercase tracking-wide">
+                <span className="inline-block bg-[#8b5cf6] text-white text-xs font-semibold px-4 py-2 rounded-full uppercase tracking-wide">
                   {feature.eyebrow}
                 </span>
               </div>
-              <h3 className="text-xl lg:text-2xl font-bold text-[#002e33] mb-4 leading-tight">
+              <h3 className="text-xl lg:text-2xl font-bold text-gray-800 mb-4 leading-tight">
                 {feature.title}
               </h3>
-              <p className="text-[#406266] leading-relaxed mb-6">
+              <p className="text-gray-600 leading-relaxed mb-6">
                 {feature.description}
               </p>
               <div className="mt-8">

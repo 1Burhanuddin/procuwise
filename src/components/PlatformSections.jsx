@@ -39,7 +39,7 @@ const PlatformSections = () => {
     <section className="bg-white py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 lg:mb-20">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#002e33] mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6 leading-tight">
             One platform for end-to-end visibility and control
           </h2>
         </div>
@@ -51,7 +51,7 @@ const PlatformSections = () => {
               <a
                 key={section.id}
                 href={`#${section.id}`}
-                className="text-[#406266] hover:text-[#002e33] px-4 py-2 border-b-2 border-transparent hover:border-[#31936a] transition-colors duration-200 font-medium"
+                className="text-gray-600 hover:text-gray-800 px-4 py-2 border-b-2 border-transparent hover:border-[#8b5cf6] transition-colors duration-200 font-medium"
               >
                 {section.eyebrow.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())}
               </a>
@@ -70,22 +70,22 @@ const PlatformSections = () => {
                     alt={section.title}
                     className="w-full rounded-2xl shadow-2xl"
                   />
-                  <div className="absolute -inset-4 bg-gradient-to-r from-[#31936a]/20 to-[#406266]/20 rounded-2xl -z-10 blur-xl"></div>
+                  <div className="absolute -inset-4 bg-gradient-to-r from-[#8b5cf6]/20 to-[#7c3aed]/20 rounded-2xl -z-10 blur-xl"></div>
                 </div>
               </div>
               <div className={`${section.imageOrder === 'lg:order-2' ? 'lg:order-1' : 'lg:order-2'}`}>
-                <span className="inline-block bg-[#31936a] text-white text-xs font-semibold px-4 py-2 rounded-full uppercase tracking-wide mb-6">
+                <span className="inline-block bg-[#8b5cf6] text-white text-xs font-semibold px-4 py-2 rounded-full uppercase tracking-wide mb-6">
                   {section.eyebrow}
                 </span>
-                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#002e33] mb-6 leading-tight">
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-6 leading-tight">
                   {section.title}
                 </h3>
-                <p className="text-[#406266] leading-relaxed mb-8 text-lg">
+                <p className="text-gray-600 leading-relaxed mb-8 text-lg">
                   {section.description}
                 </p>
                 <a 
                   href={section.link}
-                  className="inline-flex items-center text-[#31936a] hover:text-[#406266] font-semibold transition-colors duration-200 text-lg group"
+                  className="inline-flex items-center text-[#8b5cf6] hover:text-[#7c3aed] font-semibold transition-colors duration-200 text-lg group"
                 >
                   {section.linkText}
                   <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
