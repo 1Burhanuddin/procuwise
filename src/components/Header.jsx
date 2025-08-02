@@ -18,11 +18,11 @@ const Header = () => {
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="flex items-center px-4 py-2 min-w-[160px] justify-center">
+            <a href="/" className="flex items-center">
               <img 
                 src="/procuwise-logo.png" 
                 alt="Procuwise" 
-                className="h-10 w-auto"
+                className="h-8 w-auto"
               />
             </a>
           </div>
